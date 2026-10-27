@@ -1,0 +1,16 @@
+#include <unistd.h>
+#include <stdio.h>
+#include "libft.h"
+#include "stdlib.h"
+
+void ft_lstadd_front(t_list **lst, t_list *new);
+{
+    if(!lst || !new)
+    {
+        return;
+    }
+    lst -> new = new;
+    new -> lst = lst;
+}
+
+
